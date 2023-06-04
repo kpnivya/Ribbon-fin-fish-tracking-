@@ -18,7 +18,9 @@ $$\Delta y = y_{ref} - y$$
 $$x_{h_{ref}} = x_h + \Delta x$$
 $$y_{h_{ref}} = y_h + \Delta y$$
 
-
+Frame translation          |  Frame Rotation
+:-------------------------:|:-------------------------:
+![](./docs/NewTrans.png) |  ![](./docs/NewRot.png)
 
 ## Using code 
 - Use convVideo2Frame.m to extract frames from a video 
