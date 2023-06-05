@@ -30,7 +30,7 @@ Frame translation          |  Frame Rotation
 
 Starting from a fixed distance from the head position, 56 lines were drawn perpendicular to the line joining the head and the body center to increase the accuracy of tracking. For the videos chosen, 56 lines covered all of the fin and the body of the fish. It is important to note that fixing the head at the reference position will help in drawing the lines at fixed distances from this position.
 
-## Using code 
+## Using the code 
 - Use `convVideo2Frame.m` to extract frames from a video 
 	- Input needed - a folder pointing to a video
 	- Output - gives out frames and stores it in desired location
@@ -47,9 +47,11 @@ Starting from a fixed distance from the head position, 56 lines were drawn perpe
 	- Input needed - Datasets (One for the fin points and the other one for the body line)
 	- Output - wave features and graphs 
 	- Dependencies - `makefinData_x.m`, `makefinData_y.m`, `makebodyData_x.m`, `makebodyData_x.m`, `SplineArg.m`, `GetAvg.m`
+
 NOTE:
 - Recommended order of execution: `convVideo2Frame.m` -> `videoRefFrameShift.m` -> `videoRefFrameShift.m` -> `Test_fin.m`
-
+- All the `.mat` files that contain the data are in `data` folder and all the columns are named accordingly(fin point coordinates, head coordinates and body center coordinates)
+- Make sure to load the data into your workspace/ change the file location in the code before running it
 ## Results
 - 150 frames were extracted for each video using kmeans clustering algorithm inbuilt in DLC. 
 - The cluster step chosen was 1 and GUI slider width was set to 25. 
