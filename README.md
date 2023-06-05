@@ -17,6 +17,7 @@ $$\Delta x = x_{ref} - x$$
 $$\Delta y = y_{ref} - y$$
 $$x_{h_{ref}} = x_h + \Delta x$$
 $$y_{h_{ref}} = y_h + \Delta y$$
+$$\theta = tan^{-1}(\frac{y_h - y_b}{x_h - x_b})$$
 
 Frame translation          |  Frame Rotation
 :-------------------------:|:-------------------------:
