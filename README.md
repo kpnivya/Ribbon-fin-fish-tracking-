@@ -36,11 +36,11 @@ Frame translation          |  Frame Rotation
 - Use `videoRefFrameShift.m` to convert frames back to a video 
 	- Input needed - A folder containing frames and desired location for the video
 	- Output - Video generated from these frames
-- Use Test_fin to check the graphs and wave features for the Dataset
+- Use `Test_fin.m` to check the graphs and wave features for the Dataset
 	- Input needed - Datasets (One for the fin points and the other one for the body line)
 	- Output - wave features and graphs 
 	- Dependencies - `makefinData_x.m`, `makefinData_y.m`, `makebodyData_x.m`, `makebodyData_x.m`, `SplineArg.m`, `GetAvg.m`
 
 
 NOTE:
-- Recommended order of execution: `convVideo2Frame.m` -> `videoRefFrameShift.m` -> `videoRefFrameShift.m` -> `Test_fin`
+- Recommended order of execution: `convVideo2Frame.m` -> `videoRefFrameShift.m` -> `videoRefFrameShift.m` -> `Test_fin.m`
